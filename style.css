@@ -1,0 +1,17 @@
+body {
+  background-color: #000;  /* black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* full height */
+  margin: 0;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
