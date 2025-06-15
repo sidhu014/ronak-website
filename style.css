@@ -38,7 +38,29 @@ p {
   transition: 0.3s;
 }
 
+.btn i {
+  margin-right: 8px;
+}
+
 .btn:hover {
   background: hotpink;
   color: white;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+
+.contact-options.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
