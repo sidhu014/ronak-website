@@ -3,95 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ronak's Awesome Page</title>
+  <title>Sid's Awesome Page</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 36px;
-      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    p {
-      color: #ccc;
-      font-size: 18px;
-      margin: 20px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      font-size: 16px;
-      color: #000;
-      background: lime;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn i {
-      margin-right: 8px;
-    }
-
-    .btn:hover {
-      background: hotpink;
-      color: white;
-    }
-
-    .contact-options {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: center;
-      margin-top: 20px;
-      opacity: 0;
-      transform: translateY(-10px);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-      pointer-events: none;
-    }
-
-    .contact-options.show {
-      opacity: 1;
-      transform: translateY(0);
-      pointer-events: auto;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Ronak's Website</h1>
-    <p>Website bnna shuru ho gyi hai... abhi time lagega pr aa jayega!</p>
-
-    <a href="#" class="btn" onclick="showOptions()">Contact Me</a>
-
-    <div class="contact-options" id="contactOptions">
-      <a href="mailto:lootera014@gmail.com" class="btn">
-        <i class="fas fa-envelope"></i> Email (Gmail)
-      </a>
-      <a href="https://www.instagram.com/shridhar_jani_014/" target="_blank" class="btn">
-        <i class="fab fa-instagram"></i> Instagram DM
-      </a>
-      <a href="https://wa.me/8141843068" target="_blank" class="btn">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-      </a>
+    <h1>Welcome to Sid's Website</h1>
+    <p>First of many</p>
+    <a href="mailto:lootera014@gmail.com" class="btn" onclick="showOptions()">Contact Me</a>
+    <div id="contactOptions" class="contact-options">
+      <a href="mailto:lootera014@gmail.com" target="_blank">Gmail</a>
+      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
+      <a href="https://wa.me/yourwhatsapplink" target="_blank">WhatsApp</a>
     </div>
   </div>
 
