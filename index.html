@@ -10,7 +10,8 @@
   <div class="container">
     <h1>Welcome to Sid's Website</h1>
     <p>First of many</p>
-    <a href="mailto:lootera014@gmail.com" class="btn" onclick="showOptions()">Contact Me</a>
+    <button class="btn" id="contactBtn" onclick="showContactOptions()">Contact Me</button>
+
     <div id="contactOptions" class="contact-options">
       <a href="mailto:lootera014@gmail.com" target="_blank">Gmail</a>
       <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
@@ -19,9 +20,9 @@
   </div>
 
   <script>
-    function showOptions() {
+    function showContactOptions() {
       document.getElementById('contactOptions').classList.add('show');
-      document.querySelector('.btn').style.display = 'none';
+      document.getElementById('contactBtn').style.display = 'none';
     }
   </script>
 </body>
