@@ -1,66 +1,77 @@
 body {
   margin: 0;
   padding: 0;
-  background: #000;
-  font-family: Arial, sans-serif;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 40px;
   text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
 }
 
 h1 {
-  font-size: 36px;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 p {
-  color: #ccc;
-  font-size: 18px;
-  margin: 20px 0;
+  color: #ddd;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  color: #000;
-  background: lime;
-  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  border: none;
+  border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn i {
-  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background: hotpink;
-  color: white;
+  background: linear-gradient(45deg, #7873f5, #ff6ec4);
+  transform: scale(1.05);
 }
 
 .contact-options {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
+  display: none;
   margin-top: 20px;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  pointer-events: none;
 }
 
 .contact-options.show {
-  opacity: 1;
-  transform: translateY(0);
-  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-options a {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-options a:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
 }
